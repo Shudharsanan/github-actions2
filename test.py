@@ -1,4 +1,4 @@
-mport os
+import os
 from azure.identity import ClientSecretCredential
 from azureml.core import Workspace, Datastore, Dataset
 from azureml.data.datapath import DataPath
