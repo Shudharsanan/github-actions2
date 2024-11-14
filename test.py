@@ -33,10 +33,10 @@ ws = Workspace(subscription_id = subscription_id,
 compute_target = ComputeTarget(workspace = ws, name = 'trial-compute')
 
 datastore = Datastore.get(ws, 'azure_file_share_datastore')
-data_path = DataPath(datastore, 'Users/shudharsananm.1989/my_own_code/github_actions_testing.py')
+#data_path = DataPath(datastore, 'Users/shudharsananm.1989/my_own_code/github_actions_testing.py')
 
 # Mount the datastore to the compute target
-mount_point = data_path.mount()
+mount_point = datastore.mount()
 
 # Mount the data and use it in the ScriptRunConfig
 mount_point.start()
